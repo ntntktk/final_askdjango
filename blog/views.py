@@ -1,5 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import Category, Shop, Review
+from .forms import CommentForm
 
 def index(request):
     shop_list = Category.objects.all()
