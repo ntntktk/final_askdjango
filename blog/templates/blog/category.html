@@ -29,7 +29,7 @@
         {{ comment.message }}
         by {{ comment.user }}
         {{ comment.created_at }}
-        <a href="{% url "blog:comment_edit" category.pk comment.pk %}">
+        <a href="{% url "blog:review_edit" category.pk comment.pk %}">
             수정
         </a>
     </li>
