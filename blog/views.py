@@ -15,6 +15,20 @@ def category_detail(request, pk):
         'category': category,
         })
 
+def category_new(request, category_pk):
+    pass
+
+def category_edit(request, category_pk, pk):
+    pass
+
+def shop_detail(request, pk):
+    pass
+
+def shop_new(request, category_pk):
+    pass
+
+def shop_edit(request, category_pk, pk):
+    pass
 
 def review_new(request, category_pk):
     if request.method == 'POST':
